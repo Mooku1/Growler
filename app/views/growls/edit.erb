@@ -1,0 +1,18 @@
+<h1>Edit/Delete your Growl?</h1>
+
+<form action="/growls/<%= @growl.id %>/edit" method="post">
+  <input type="hidden" name="_method" value="patch">
+  <input type="text" name="growls[growl]" value=<%=@growl.growl%>><br>
+  <input type="submit" value="Edit this!">
+</form><br>
+
+<form action="/growls/<%= @growl.id %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <input type="submit" value="Delete this!">
+</form><br>
+
+
+
+
+<p><a href="/growls">Back to Growls!</a></p>
+

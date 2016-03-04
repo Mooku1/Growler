@@ -1,0 +1,10 @@
+<h1>Here are all the Growls!</h1>
+
+<% @growls.each do |growl| %>
+  <h1><a href="/growls/<%= growl.id %>"><%= growl.growl %></a></h1>
+  <h6><%= growl.name %></h6>
+<% end %>
+
+<p><a href="/growls/new" class="btn btn-primary">Add a Growl!</a></p>
+
+
